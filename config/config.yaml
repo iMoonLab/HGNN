@@ -18,7 +18,7 @@ is_probH: True
 #---------------------------------------
 # change me
 use_mvcnn_feature_for_structure: True
-use_gvcnn_feature_for_structure: False
+use_gvcnn_feature_for_structure: True
 #---------------------------------------
 
 
