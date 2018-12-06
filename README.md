@@ -24,10 +24,13 @@ if you find our work useful in your research, please consider citing:
 Install [Pytorch 0.4.0](https://pytorch.org/). You also need to install yaml. The code has been tested with Python 3.6, Pytorch 0.4.0 and CUDA 9.0 on Ubuntu 16.04.
 
 ### Usage
-**Firstly, you should download the feature file for modelnet40 and ntu2012 from [google drive](https://drive.google.com/drive/folders/1oMG9k-cDa-r1VbC5HwAEzZEO13mDeWme?usp=sharing). Make a folder to restore the downloaded files "ModelNet40_mvcnn_gvcnn.mat" and ""
+
+**Firstly, you should download the feature files for modelnet40 and ntu2012 datasets.
 Then, configure the "data_root" and "result_root" in config/config.yaml.**
 
-Download datasets for training/evaluation  
+Download datasets for training/evaluation  (should be placed under "data_root")
+- [ModelNet40_mvcnn_gvcnn_feature](https://drive.google.com/file/d/1euw3bygLzRQm_dYj1FoRduXvsRRUG2Gr/view?usp=sharing)
+- [NTU2012_mvcnn_gvcnn_feature](https://drive.google.com/file/d/1euw3bygLzRQm_dYj1FoRduXvsRRUG2Gr/view?usp=sharing)
 
 
 
