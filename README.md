@@ -26,8 +26,8 @@ Install [Pytorch 0.4.0](https://pytorch.org/). You also need to install yaml. Th
 
 ### Usage
 
-**Firstly, you should download the feature files for modelnet40 and ntu2012 datasets.
-Then, configure the "data_root" and "result_root" in config/config.yaml.**
+**Firstly, you should download the feature files of modelnet40 and ntu2012 datasets.
+Then, configure the "data_root" and "result_root" path in config/config.yaml.**
 
 Download datasets for training/evaluation  (should be placed under "data_root")
 - [ModelNet40_mvcnn_gvcnn_feature](https://drive.google.com/file/d/1euw3bygLzRQm_dYj1FoRduXvsRRUG2Gr/view?usp=sharing)
