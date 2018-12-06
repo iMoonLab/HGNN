@@ -1,5 +1,6 @@
 ## Hypergraph Neural Networks
 Created by Yifan Feng, Haoxuan You, Zizhao Zhang, Rongrong, Ji, Yue Gao from Xiamen University and Tsinghua University.
+
 ![pipline](doc/pipline.png)
 
 ### Introduction
