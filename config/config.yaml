@@ -1,0 +1,57 @@
+#------------------------------------------------------------------#
+# must check the direction of data_root and result_root before run #
+#------------------------------------------------------------------#
+
+#configure feature path
+# **** please must modify the data_root before first running ****
+data_root: &d_r /home/fengyifan/data/features
+modelnet40_ft: !join [*d_r, ModelNet40_mvcnn_gvcnn.mat]
+ntu2012_ft: !join [*d_r, NTU2012_mvcnn_gvcnn.mat]
+
+
+#Hypergraph
+graph_type: &g_t hypergraph
+K_neigs: [10]
+#K_neigs: [10, 15 ]
+m_prob: 1.0
+is_probH: True
+#---------------------------------------
+# change me
+use_mvcnn_feature_for_structure: True
+use_gvcnn_feature_for_structure: False
+#---------------------------------------
+
+
+#Model
+#--------------------------------------------------
+# select the dataset you use, ModelNet40 or NTU2012
+on_dataset: &o_d ModelNet40
+#on_dataset: &o_d NTU2012
+#--------------------------------------------------
+
+#---------------------------------------
+# change me
+use_mvcnn_feature: False
+use_gvcnn_feature: True
+#---------------------------------------
+
+
+#Result
+# configure result path
+# **** please must modify the result_root before first running ****
+result_root: &r_r /home/fengyifan/result/hgnn
+result_sub_folder: !join [*r_r, !concat [ *g_t, _, *o_d ]]
+ckpt_folder: !join [*r_r, ckpt]
+
+
+#Train
+max_epoch: 600
+n_hid: 128
+lr: 0.001
+milestones: [100]
+gamma: 0.9
+drop_out: 0.5
+print_freq: 50
+weight_decay: 0.0005
+decay_step: 200
+decay_rate: 0.7
