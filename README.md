@@ -1,3 +1,6 @@
+## News
+We have release a deep learning toolbox named DHG for graph neural networks and hypergraph neural networks. You can find many intresting things in it. Many correlation structures like simple graph, directed graph, bipartite graph, and simple hypergraph are all supported in the toolbox, as well as their visualization. More details refer to [DHG](https://github.com/iMoonLab/DeepHypergraph)!
+
 ## Hypergraph Neural Networks
 Created by Yifan Feng, Haoxuan You, Zizhao Zhang, Rongrong, Ji, Yue Gao from Xiamen University and Tsinghua University.
 
